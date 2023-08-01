@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acupuncture Point Glowing Hand</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+    h2{
+      height:100px;
+    }
+  </style>
+  <header>
+    <h1>Acupuncture Point Glowing Hand</h1>
+  </header>
+  <main>
+    <div class="container">
+      <label for="acupuncturePoint">Enter Acupuncture Point:</label>
+      <input type="text" id="acupuncturePoint" placeholder="e.g., LI4">
+      <button onclick="showGlowingHand()">Show Glowing Hand</button>
+      <a href="#" id="downloadLink" download="glowing_hand.png" style="display: none;">Download Glowing Hand</a>
+      <div class="hand-container">       
+        <img src="hand.png" alt="Hand Image" id="handImage">
+        <div class="glow" id="glowingPoint"></div>
+      </div>
+      
+    </div>
+  </main>
+  <h2>The Generated image :</h2>
+  <canvas id="handCanvas" width="600" height="100px"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
+
